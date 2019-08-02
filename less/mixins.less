@@ -1,1 +1,20 @@
 // Mixins in here
+
+.btn-text (@color, @border-radius, @fontsize) {
+  padding: 10px 40px;
+  border-radius: @border-radius;
+  background-color: teal;
+  color: @color;
+  cursor: pointer;
+  font-size: @fontsize;
+  width: 180px;
+
+  &:hover {
+	// The compiled color returned is #006667
+    background-color: darken(teal, 5%)
+  }
+}
+
+.btn {
+  .btn-text(white, 5px, 12pt)
+}
