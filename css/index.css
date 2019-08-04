@@ -10,6 +10,9 @@
 .btn:hover {
   background-color: #006667;
 }
+.padding {
+  padding-left: 3%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -211,7 +214,6 @@ nav .logo {
     display: flex;
     justify-content: center;
     align-content: center;
-    border: 1px solid red;
   }
 }
 nav .logo h2 {
@@ -264,8 +266,23 @@ nav .pagelinks a {
 .home .header-section p {
   margin-bottom: 10px;
 }
+@media (max-width: 500px) {
+  .home .header-section p {
+    padding-left: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .home .header-section h2 {
+    padding-left: 3%;
+  }
+}
 .home .header-section .img-top {
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .header-section .img-top {
+    padding-left: 3%;
+  }
 }
 .home .content-section {
   margin: 30px 0;
@@ -273,13 +290,29 @@ nav .pagelinks a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    padding-left: 3%;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -288,9 +321,19 @@ nav .pagelinks a {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
+}
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    padding-left: 0%;
+  }
 }
 .home .inverse-content .img-content {
   padding-right: 1%;
@@ -300,16 +343,52 @@ nav .pagelinks a {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    padding-left: 3%;
+    margin: 0px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-destination img {
+    border-radius: 10px;
+    width: 900px;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 3%;
+  }
 }
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 75%;
+    padding-left: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
 }
