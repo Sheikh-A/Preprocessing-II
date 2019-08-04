@@ -3,21 +3,41 @@
 nav {
   display: flex;
   align-items: center;
+  align-content: center;
   justify-content: center;
   margin-top: 20px;
-  margin-left: 15px;
+  margin-left: 10%;
   border-bottom: 3px dashed lightgray;
   margin-bottom: 0;
-  width: 95%;
+  width: 80%;
+  @media @mobile {
+    width: 500px;
+    justify-content: center;
+    padding: 0px;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 0%;
+  }
   .logo {
     margin-right: 10%;
-    margin-left: 12%;
+    margin-left: 25%;
     font-size: 1.5rem;
+
+    @media @mobile {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      border: 1px solid red;
+    }
+
     h2 {
       color: black;
       font-size: 4rem;
       font-weight: bold;
       margin-bottom: 0px;
+      @media @mobile {
+        font-size: 3rem;
+      }
     }
   }
   .pagelinks {
@@ -26,6 +46,11 @@ nav {
     font-size: 1.5rem;
 
     margin-right: 10%;
+    @media @mobile {
+      justify-content: center;
+      align-content: center;
+      margin-left: 10px;
+    }
 
     a {
       color: black;
